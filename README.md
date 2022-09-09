@@ -11,5 +11,5 @@ Board Manager:
 Library:  
 - ArduinoJson by Benoit Blanchon Version 6.19.4 https://arduinojson.org/
 
-Other refferences:
+Other references:
 - ArduinoJson Assistance https://arduinojson.org/v6/assistant
