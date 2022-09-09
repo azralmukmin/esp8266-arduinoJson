@@ -12,4 +12,4 @@ Library:
 - ArduinoJson by Benoit Blanchon Version 6.19.4 https://arduinojson.org/
 
 Other refferences:
-- Arduino Assistance https://arduinojson.org/v6/assistant
+- ArduinoJson Assistance https://arduinojson.org/v6/assistant
