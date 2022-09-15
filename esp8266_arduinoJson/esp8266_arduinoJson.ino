@@ -1,4 +1,5 @@
 #include <ArduinoJson.h>
+#include <math.h>
 
 int count = 0;
 
@@ -8,9 +9,12 @@ void setup() {
 
 void loop() {
 
+  float temperature = 24.115111;
+  float humidity = 78.2225222;
+
   StaticJsonDocument<512> doc;
-  doc["temperature"] = 24;
-  doc["humidity"] = 74;
+  doc["temperature"] = setFloat(temperature, 2);
+  doc["humidity"] = setFloat(humidity, 1);
   doc["location"] = "Perlis";
   doc["count"] = count;
 
@@ -33,4 +37,8 @@ void loop() {
   count++;
 
   delay(1000);
+}
+
+double setFloat(double value, int f) {
+  return (int)(value * pow(10,f) + 0.5) / pow(10,f);
 }
